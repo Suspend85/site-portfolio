@@ -1,0 +1,11 @@
+:root {
+	--block-padding-top: 10px;
+	--block-margin-bottom: 90px;
+}
+$text-color: #000;
+$main-color: #faad59;
+$grad1-main-color: #ffb95f;
+$grad2-main-color: #e19c50;
+$main-gradient: linear-gradient(145deg, $grad1-main-color, $grad2-main-color);
+$main-shadow: 5px 3px 2px $main-color;
+$little-shadow: 2px 2px 2px $main-color;

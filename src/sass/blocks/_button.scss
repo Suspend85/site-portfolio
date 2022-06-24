@@ -1,0 +1,28 @@
+.btn {
+	padding: 7px 25px;
+
+	border-radius: 5px;
+	background-image: linear-gradient(to right, $main-color, $grad1-main-color, $grad2-main-color, #e75516);
+	box-shadow: 0 4px 15px 0 rgba(30, 28, 28, 0.75);
+	border: none;
+	text-align: center;
+	background-size: 300% 100%;
+	moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		background-position: 100% 0;
+		moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		// color: rgba(0, 0, 0, 0.637);
+		// background: linear-gradient(145deg, $grad2-main-color, $grad1-main-color);
+	}
+}

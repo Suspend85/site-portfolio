@@ -1,0 +1,40 @@
+.privacy {
+   margin: 30px 0 50px 0;
+   &__title {
+      padding-bottom: 20px;
+      margin: 0;
+      text-align: center;
+   }
+   &__subtitle {
+      display: inline-block;
+      margin: 15px 0 10px 5px;
+   }
+}
+
+.privacy ol {
+   counter-reset: li;
+   list-style: none;
+   margin: 0;
+   .sublist,
+   .sublist2 {
+      margin-left: 55px;
+   }
+}
+
+.mainlist {
+   border: 1px solid $main-color;
+   padding: 5px 10px;
+   li:before {
+      counter-increment: li;
+      content: counters(li, '.') '. ';
+      padding: 0px 0;
+      display: inline-block;
+      margin: 3px 5px 3px 0;
+      border-radius: 3px;
+      color: #000;
+      text-align: left;
+      width: 45px;
+      transition: 0.4s linear;
+      font-weight: bold;
+   }
+}

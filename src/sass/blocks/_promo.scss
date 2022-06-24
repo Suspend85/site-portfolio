@@ -1,0 +1,40 @@
+.promo {
+	min-height: 100vh;
+	position: relative;
+	background: url('../img/bg8a.png') no-repeat 50% / cover;
+	padding-top: 25px;
+	margin-bottom: var(--block-margin-bottom);
+	&__wrap {
+		padding-left: 20px;
+		// max-width: 80%;
+		text-align: left;
+	}
+	&__title {
+		text-shadow: $main-shadow;
+		max-width: auto;
+		margin-top: 10px;
+	}
+	&__subtitle {
+		position: relative;
+		padding: 7px 0 0 12px;
+		margin-bottom: 0;
+		// padding-top: 10px;
+		z-index: 2;
+		@include before_circle;
+	}
+	&__btns {
+		margin-top: 25px;
+		display: flex;
+		align-items: baseline;
+		max-width: auto;
+		gap: 20px;
+	}
+	&__link {
+		text-align: center;
+		align-items: center;
+		height: auto;
+		color: $text-color;
+		font-weight: bold;
+		// text-shadow: $little-shadow;
+	}
+}
