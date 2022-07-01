@@ -9,3 +9,8 @@ $grad2-main-color: #e19c50;
 $main-gradient: linear-gradient(145deg, $grad1-main-color, $grad2-main-color);
 $main-shadow: 5px 3px 2px $main-color;
 $little-shadow: 2px 2px 2px $main-color;
+$icons: (
+  "telegram": (28),
+  "linkedin": (28),
+  "github": (28)
+);

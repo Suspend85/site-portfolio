@@ -2,6 +2,7 @@
 	padding-top: var(--block-padding-top);
 	margin-bottom: var(--block-margin-bottom);
 	&__wrapper {
+		padding: 0 10px 0 10px;
 		display: grid;
 		grid-template: minmax(245px, auto) minmax(255px, auto) / minmax(300px, 400px) minmax(300px, 100%);
 		grid-auto-rows: minmax(245px, auto);

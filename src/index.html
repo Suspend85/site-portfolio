@@ -42,31 +42,22 @@
 		<meta name="theme-color" content="#ffffff" />
 
 		<link rel="stylesheet" href="css/style.min.css" />
-		<script
-			src="https://code.jquery.com/jquery-3.6.0.min.js"
-			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			crossorigin="anonymous"
-		></script>
+
 	</head>
 	<body>
 		<div class="gotop">
-			<a class="gotop__link" id="gotop" title="Go to top">
-				<img class="gotop__icon" src="icons/totop.svg" alt="to top" />
+			<a hidden class="gotop__link" id="gotop" title="Go to top">
+				<!-- <img class="gotop__icon" src="icons/totop.svg" alt="to top" /> -->
 			</a>
 		</div>
 
 		<aside class="sidepanel">
-			<a href="https://t.me/dmitrii_let" target="_blank" class="sidepanel__link">
-				<img class="sidepanel__icon" src="icons/social/telegram.svg" alt="tg" />
+			<a href="https://t.me/dmitrii_let" target="_blank" class="sidepanel__link icon-telegram">
 			</a>
-			<a href="https://www.linkedin.com/in/dmitrii-krop-183a641a6/" target="_blank" class="sidepanel__link">
-				<img class="sidepanel__icon" src="icons/social/linkedin.svg" alt="tg" />
+			<a href="https://www.linkedin.com/in/dmitrii-krop-183a641a6/" target="_blank" class="sidepanel__link icon-linkedin">
 			</a>
-			<a href="https://github.com/Suspend85" target="_blank" class="sidepanel__link">
-				<img class="sidepanel__icon" src="icons/social/github.svg" alt="github" />
+			<a href="https://github.com/Suspend85" target="_blank" class="sidepanel__link icon-github">
 			</a>
-			<div class="sidepanel__divider"></div>
-			<div class="sidepanel__text"><span>Социальные сети</span></div>
 		</aside>
 
 		<div class="menu">
@@ -78,19 +69,15 @@
 						<li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
 						<li class="menu__link"><a href="#tools">МОИ НАВЫКИ</a></li>
 						<li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
-						<li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
 						<li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
 					</ul>
 				</nav>
 				<div class="menu__social">
-					<a href="https://t.me/dmitrii_let" target="_blank" class="sidepanel__link">
-						<img src="icons/social/telegram.svg" alt="tg" />
+					<a href="https://t.me/dmitrii_let" target="_blank" class="sidepanel__link icon-telegram">
 					</a>
-					<a href="https://www.linkedin.com/in/dmitrii-krop-183a641a6/" target="_blank" class="sidepanel__link">
-						<img src="icons/social/linkedin.svg" alt="tg" />
+					<a href="https://www.linkedin.com/in/dmitrii-krop-183a641a6/" target="_blank" class="sidepanel__link icon-linkedin">
 					</a>
-					<a href="https://github.com/Suspend85" target="_blank" class="sidepanel__link">
-						<img src="icons/social/github.svg" alt="github" />
+					<a href="https://github.com/Suspend85" target="_blank" class="sidepanel__link icon-github">
 					</a>
 				</div>
 
@@ -178,31 +165,6 @@
 							</div>
 						</div>
 
-						<div class="about__skills-item">
-							<div class="about__skills-circle">
-								<img src="icons/about_me/web_development.svg" alt="web_dev" />
-							</div>
-							<div>
-								<div class="title title_fz14">Lorem ipsum</div>
-								<div class="about__skills-text title_fz12">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut elit, sed
-									do eiusmod tempor incididunt ut
-								</div>
-							</div>
-						</div>
-
-						<div class="about__skills-item">
-							<div class="about__skills-circle">
-								<img src="icons/about_me/web_development.svg" alt="web_dev" />
-							</div>
-							<div>
-								<div class="title title_fz14">Lorem</div>
-								<div class="about__skills-text title_fz12">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-									dolore magna aliqua.
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -446,46 +408,7 @@
 			</div>
 		</section>
 
-		<section id="price" class="price">
-			<div class="container">
-				<h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
-				<div class="divider price__divider"></div>
-				<div class="price__wrapper">
-					<div class="price__wrapper-item">
-						<div class="price__wrapper-title title title_fz14">Landing-page</div>
-						<div class="price__wrapper-cost title title_fz14">от 8000 руб.</div>
-						<div class="price__wrapper-descr title_fz12">Одностраничный сайт для презентации услуг/товаров/...</div>
-					</div>
-					<div class="price__wrapper-item">
-						<div class="price__wrapper-title title title_fz14">Web-приложение</div>
-						<div class="price__wrapper-cost title title_fz14">от 28000 руб.</div>
-						<div class="price__wrapper-descr title_fz12">Приложение внутри браузера для лучшего комфорта</div>
-					</div>
-					<div class="price__wrapper-item">
-						<div class="price__wrapper-title title title_fz14">Корпоративный сайт</div>
-						<div class="price__wrapper-cost title title_fz14">от 20000 руб.</div>
-						<div class="price__wrapper-descr title_fz12">Сайт для вашего бизнеса или компании</div>
-					</div>
-					<div class="price__wrapper-item">
-						<div class="price__wrapper-title title title_fz14">Android/IOS Приложение</div>
-						<div class="price__wrapper-cost title title_fz14">от 25000 руб.</div>
-						<div class="price__wrapper-descr title_fz12">Приложение для смартфона любой ОС</div>
-					</div>
-					<div class="price__wrapper-item">
-						<div class="price__wrapper-title title title_fz14">Интернет-магазин</div>
-						<div class="price__wrapper-cost title title_fz14">от 30000 руб.</div>
-						<div class="price__wrapper-descr title_fz12">Инструмент для ваших продаж в сети</div>
-					</div>
-					<div class="price__wrapper-item">
-						<div class="price__wrapper-title title title_fz14">Дизайн</div>
-						<div class="price__wrapper-cost title title_fz14">Индивидуально</div>
-						<div class="price__wrapper-descr title_fz12">Создам дизайн для вашего сайта/приложения...</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- <section id="contacts" class="contacts">
+		<section id="contacts" class="contacts">
          <div class="container">
             <div class="contacts__wrapper">
                <div class="contacts__photo">
@@ -526,7 +449,7 @@
                            <input type="submit" accesskey="enter" value="Отправить сообщение" class="btn contacts__btn"></input>
                            <div class="contacts__policy">
                               <input required type="checkbox" name="checkbox " id="checkbox" />
-                              <span>Я согласен(а) с <a href="/policy.html" target="_blank">политикой конфиденциальности</a></span>
+                              <span>Я согласен(на) с <a href="/policy.html" target="_blank">политикой конфиденциальности</a></span>
                            </div>
                         </div>
                      </form>
@@ -534,8 +457,13 @@
                </div>
             </div>
          </div>
-      </section> -->
+      </section>
 
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

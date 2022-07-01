@@ -1,10 +1,14 @@
 .contacts {
-	padding: var(--block-padding) 0 90px 0;
+	padding-top: var(--block-padding-top);
+	margin-bottom: var(--block-margin-bottom);
 	&__wrapper {
-		padding: 0 35px 0 52px;
+		padding: 0 10px 0 10px;
 		display: grid;
-		grid-template-columns: 400px 585px;
+		grid-template-columns: minmax(300px, 400px) 1fr;
+		grid-template-rows: minmax(300px, 100%);
+		grid-auto-rows: auto;
 		justify-content: space-between;
+		gap: 70px;
 	}
 	&__photo {
 		img {
@@ -37,7 +41,7 @@
 		display: grid;
 		grid-template: 45px 190px 45px / repeat(2, 280px);
 		justify-content: space-between;
-		row-gap: 31px;
+		gap: 31px 8px;
 		label {
 			display: block;
 			position: absolute;
@@ -67,6 +71,7 @@
 	}
 
 	&__input {
+		
 		position: relative;
 		input {
 			width: 100%;

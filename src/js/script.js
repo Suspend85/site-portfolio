@@ -1,31 +1,21 @@
-$(document).ready(function () {
-	// прокрутка к блокам
-	$(document).on('click', '.promo__btns a', function (e) {
-		e.preventDefault();
-		var id = $(this).attr('href');
-		var top = $(id).offset().top;
-		$('body, html').animate({ scrollTop: top }, 1000);
-	});
-	// прокрутка из меню к блокам
-	$(document).on('click', '.menu__link a', function (e) {
-		e.preventDefault();
+$(function () {
+	// плавная прокрутка к блокам по ссылкам #
+	$('a[href^="#"]').on('click', function () {
+		const _href = $(this).attr('href');
 		$('.menu').removeClass('active');
-		var id = $(this).attr('href');
-		var top = $(id).offset().top;
-		$('body, html').animate({ scrollTop: top }, 1000);
+		$('html, body').animate({ scrollTop: $(_href).offset().top + 'px' }, 1000);
+		return false;
 	});
 
 	$(window).on('scroll', function () {
-		if ($(this).scrollTop() > 300) {
-			button.fadeIn();
+		if ($(this).scrollTop() > 400) {
+			$('#gotop').attr('hidden', false);
 		} else {
-			button.fadeOut();
+			$('#gotop').attr('hidden', true);
 		}
 	});
 
-	const button = $('#gotop');
-
-	button.on('click', function () {
+	$('#gotop').on('click', function () {
 		$('body, html').animate({ scrollTop: 0 }, 800);
 		return false;
 	});

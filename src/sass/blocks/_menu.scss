@@ -111,18 +111,23 @@
 		align-items: center;
 		a.sidepanel__link {
 			position: relative;
+			-webkit-transition: all 1s;
 			transition: all 1s;
 			&:hover {
-				transform: scale(1.15);
-				@include before_circle;
-				&:before {
-					background: #fff;
-					top: -2px;
-					left: -2px;
-					width: 32px;
-					height: 32px;
-				}
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+				// @include before_circle;
+				// &:before {
+				// 	background: #fff;
+				// 	top: -2px;
+				// 	left: -2px;
+				// 	width: 32px;
+				// 	height: 32px;
+				// }
 			}
+		}
+		@each $icon, $size in $icons {
+			@include icon($icon, $size);
 		}
 	}
 

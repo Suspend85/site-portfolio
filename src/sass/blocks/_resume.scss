@@ -2,10 +2,11 @@
 	padding-top: var(--block-padding-top);
 	margin-bottom: var(--block-margin-bottom);
 	&__wrapper {
-		padding-top: 60px;
+		padding: 60px 10px 0 40px;
+		// padding-left: 40px;
 		display: grid;
 		grid-template-columns: repeat(2, auto);
-		column-gap: 135px;
+		column-gap: 90px;
 		justify-content: center;
 	}
 	&__column {
